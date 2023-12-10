@@ -1,0 +1,162 @@
+.headerimg {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 3vw;
+}
+
+nav ul li a {
+    color: #7D7F7C;
+    text-decoration: none;
+    font-size: 2vw; /* Responsive font size */
+}
+
+.active {
+  font-weight: 800;
+  color: #FF0000;
+ }
+
+ nav ul li a:hover {
+   font-weight: 800;
+   color: #FF0000;
+}
+
+.video-banner {
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5vw;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.text-overlay-1, .text-overlay-2 {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2vw; /* Responsive font size */
+  z-index: 2;
+  text-shadow: 2px 2px 5px black; /* Adds a text shadow for better visibility */
+}
+
+.text-overlay-1 {
+  padding-bottom: 5vw;
+}
+
+.text-overlay-2 {
+  padding-top: 10vw;
+}
+
+.text-overlay-2 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    display: inline-block;
+    pointer-events: all;
+}
+
+.text-overlay-2 a:hover {
+  font-weight: 900;
+  box-shadow: 1px 1px 10px #ffffff, 1px 1px 10px #cccccc;
+  text-shadow: 1px 1px 10px #000000, 1px 1px 10px #cccccc;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ color: #000000;
+}
+
+.column {
+ flex: 1;
+  border-radius: 25px;
+ padding: 5px;
+  margin: 5px;
+  background-color: #d9d9d9;
+}
+
+/* The slideshow container */
+.slideshow-container {
+  position: relative;
+  left: -50%;
+  width: 100%;
+  height: 200px;
+}
+
+/* Slides */
+.slideshow-container img {
+  border-radius: 25px;
+  position: absolute;
+  height: 200px; 
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Show the first slide */
+.slideshow-container img:first-child {
+  opacity: 1; 
+  object-fit: cover;
+}
+
+footer {
+  padding-top: 5vw;
+}
+
+.siglogo, .sigcopyr{
+  flex: 1;
+  border-radius: 25px;
+ padding: 5px;
+  margin: 5px;
+}
+
+.siglogo img{
+  float: left;
+  margin: 0px 0px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15vw;
+}
+
+.sigcopyr{
+  text-align: right;
+  border-top: 2px solid #d1d1d1;
+  font-size: 15px;
+  border-radius: 0px;
+  
+}
+
+@media screen and (max-width: 600px) {
+ .container {
+    flex-direction: column;
+ }
+  
+  @-ms-viewport {
+    width: device-width;
+}}
