@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        /*Update style sheet to match download location of this file*/
+        <link rel="stylesheet" href="\styles.css">
+    
+      <title>Mangata & Gallo</title>
+    </head>
+    <header>
+      <img src="https://github.com/c-mccall1031/testing/blob/main/Images/Asset%202@3x.png?raw=true" alt="mangata & gallo logo" class="headerimg">
+    </header>
+    <main>
+    
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Engagement</a></li>
+          <li><a href="#">Wedding</a></li>
+          <li><a href="#">Anniversary</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    
+      <div class="video-banner">
+        <video autoplay muted loop poster="https://github.com/c-mccall1031/photogallery/blob/main/images/AdobeStock_410140307.jpeg?raw=true">
+          <source src="https://v.ftcdn.net/04/10/14/06/700_F_410140625_fE903ypO3Ft0HsXGW1dQSOhVsq3GZ9W5_ST.mp4" type="video/mp4" alt="engagement ring presented in red heart box">
+          Your browser does not support the video tag.
+        </video>
+        
+        <div class="text-overlay-1">
+          <h1>20% off select engagement rings.</h1>
+        </div>
+        <div class="text-overlay-2">
+          <a href="your-link-2">View sale items</a>
+        </div>  
+        </div>
+      
+    <article>
+    <div class="container">
+     <div class="column">
+       
+        <div class="slideshow-container">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image1.jpg?raw=true"
+                style="width:100%" alt="3 silver diamond rings">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image2.jpg?raw=true"
+                style="width:100%" alt="3 gold diamond rings">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image3.jpg?raw=true"
+                style="width:100%" alt="2 gold, 2 silver diamond rings">
+        </div>
+       
+       <h2>Engagement</h2>
+       <p>Our handcrafted engagement rings are masterpieces of love and dedication. Crafted by skilled artisans, each ring is a testament to the enduring nature of commitment. The unique design of these rings incorporates symbolism and meaningful details, ensuring that your engagement ring remains a cherished keepsake throughout your life together.</p>
+     </div>
+     <div class="column">
+       
+        <div class="slideshow-container">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image4.jpg?raw=true"
+                style="width:100%" alt="silver diamond wedding band">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image5.jpg?raw=true"
+                style="width:100%" alt="gold and silver wedding band">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image6.jpg?raw=true"
+                style="width:100%" alt="masculine gold wedding band">
+        </div>
+       
+       <h2>Wedding</h2>
+            <p>Our handcrafted wedding bands are crafted with love and care to commemorate your wedding day. Each band is meticulously designed and crafted by skilled artisans to reflect your individuality and the unique nature of your relationship.</p>
+     </div>
+      
+     <div class="column">
+        <div class="slideshow-container">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image7.jpg?raw=true"
+                style="width:100%" alt="diamond bracelet">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image8.jpg?raw=true"
+                style="width:100%" alt="gold diamond and ruby earrings">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image9.jpg?raw=true"
+                style="width:100%" alt="gold diamond necklace">
+        </div>
+       
+       <h2>Anniversary</h2>
+          <p>These handcrafted pieces are not just limited to wedding anniversaries but also mark special occasions such as engagement anniversaries, renewal of vows anniversaries, and long-term relationship anniversaries.</p>
+     </div>
+       <div class="column">
+         
+        <div class="slideshow-container">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image10.jpg?raw=true"
+                style="width:100%" alt="gold woven bracelet">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image11.jpg?raw=true"
+                style="width:100%" alt="multi gem earrings">
+            <img src="https://github.com/c-mccall1031/testing/blob/main/Images/image12.jpg?raw=true"
+                style="width:100%" alt="gold ornate earrings">
+        </div>
+         
+       <h2>Jewelry</h2>
+            <p>Our luxury handmade jewelry is a result of skilled craftsmanship and exceptional design aesthetics. This type of jewelry is not mass-produced and is meticulously handcrafted by expert artisans who take great pride in their work. Each piece is carefully selected, and only the best materials and design elements are used to ensure that the finished product is not only beautiful but also functional and timeless.</p>
+     </div>
+    </div>
+      </article>
+
+      <script>
+        var slideIndex = 0;
+          showSlides();
+      
+          function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("slideshow-container");
+              for (i = 0; i < slides.length; i++) {
+                  var slideImages = slides[i].getElementsByTagName("img");
+                  for (var j = 0; j < slideImages.length; j++) {
+                      slideImages[j].style.opacity = "0";
+                  }
+                  slideIndex++;
+                  if (slideIndex > slideImages.length) {
+                      slideIndex = 1;
+                  }
+                  slideImages[slideIndex - 1].style.opacity = "1";
+              }
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+          }
+      </script>
+
+      </main> 
+    
+    <footer>
+      <div class="container">
+      <div class="siglogo">
+       <img src="https://github.com/c-mccall1031/testing/blob/main/Images/Asset%201@3x.png?raw=true" alt="mangata & gatto logo"> 
+     </div>
+     <div class="sigcopyr">
+      <p class="inner">&copy; 2023 Mangata & Gallo.</p>
+     </div>
+      </div>
+    </footer>
+</html>
+
